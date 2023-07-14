@@ -1,10 +1,15 @@
-import { StatusBar } from 'expo-status-bar';
+
+import React, {useState} from 'react'
 import { StyleSheet, Text, View } from 'react-native';
 
 export default function App() {
+  const [focusSubject, setFocusSubject] = useState("null")
   return (
     <View style={styles.container}>
-      <Text>Beginning.....</Text>
+      {focusSubject ? (
+        <Text>Here is where I'm going to build a Timer</Text>
+      ) : (
+        <Text>Here i want to build input for a subject</Text>)}
     </View>
   );
 }
@@ -12,8 +17,6 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    padding: 50,
   },
 });
