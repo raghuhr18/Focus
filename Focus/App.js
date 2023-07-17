@@ -7,6 +7,7 @@ import { colors } from './src/utils/colors';
 import { spacing } from './src/utils/sizes';
 
 
+
 export default function App() {
   const [focusSubject, setFocusSubject] = useState("Gardening")
   return (
