@@ -44,7 +44,7 @@ const styles = StyleSheet.create({
   title: {
     color: colors.white,
     fontWeight: 'Bold',
-    fontSize: fontSizes.lg,
+    fontSize: fontSizes.norm,
   },
   inputContainer: {
     paddingTop: spacing.md,
