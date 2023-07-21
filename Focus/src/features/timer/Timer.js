@@ -10,7 +10,7 @@ import { RoundedButtons } from '../../components/RoundedButton';
 import { Timing } from './Timing';
 
 const DEFAULT_TIME = 0.1
-export const Timer = ({focusSubject, onTimerEnd}) => {
+export const Timer = ({focusSubject, onTimerEnd, clearSubject}) => {
     useKeepAwake();
     const interval = React.useRef(null);
     const [minutes, setMinutes] = useState(DEFAULT_TIME);
